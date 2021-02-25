@@ -28,39 +28,40 @@ function preload() {
   images[4] = loadImage('assets/Kitchen.png');
   images[5] = loadImage('assets/Livingroom.png');
   images[6] = loadImage('assets/MainHall.png');
-  images[7] = loadImage('assets/DiningRoomVase.png')
-  images[8] = loadImage('assets/Art.png')
-  images[9] = loadImage('assets/Church.png')
-  images[10] = loadImage('assets/cookie.png')
-  images[11] = loadImage('assets/cookieinfo.png')
-  images[12] = loadImage('assets/dog1.png')
-  images[13] = loadImage('assets/dog1info.png')
-  images[14] = loadImage('assets/dog2.png')
-  images[15] = loadImage('assets/dog2info.png')
-  images[16] = loadImage('assets/dolphin.png')
-  images[17] = loadImage('assets/Sushicat.png')
-  images[18] = loadImage('assets/sushicatinfo.png')
-  images[19] = loadImage('assets/Normalcat.png')
-  images[20] = loadImage('assets/Normalcatinfo.png')
-  images[21] = loadImage('assets/snoopy.png')
-  images[22] = loadImage('assets/snoopy2.png')
-  images[23] = loadImage('assets/snoopyinfo.png')
-  images[24] = loadImage('assets/vase1.png')
-  images[25] = loadImage('assets/vase2.png')
-  images[26] = loadImage('assets/vase1info.png')
-  images[27] = loadImage('assets/vase2info.png')
-  images[28] = loadImage('assets/Yellowduck.png')
-  images[29] = loadImage('assets/yellowduckinfo.png')
-  images[30] = loadImage('assets/Pasta.png')
-  images[31] = loadImage('assets/pastainfo.png')
-  images[32] = loadImage('assets/Pic1.png')
-  images[33] = loadImage('assets/Pic2.png')
+  images[7] = loadImage('assets/DiningRoomVase.png');
+  images[8] = loadImage('assets/Art.png');
+  images[9] = loadImage('assets/Church.png');
+  images[10] = loadImage('assets/cookie.png');
+  images[11] = loadImage('assets/cookieinfo.png');
+  images[12] = loadImage('assets/dog1.png');
+  images[13] = loadImage('assets/dog1info.png');
+  images[14] = loadImage('assets/dog2.png');
+  images[15] = loadImage('assets/dog2info.png');
+  images[16] = loadImage('assets/dolphin.png');
+  images[17] = loadImage('assets/Sushicat.png');
+  images[18] = loadImage('assets/sushicatinfo.png');
+  images[19] = loadImage('assets/Normalcat.png');
+  images[20] = loadImage('assets/Normalcatinfo.png');
+  images[21] = loadImage('assets/snoopy.png');
+  images[22] = loadImage('assets/snoopy2.png');
+  images[23] = loadImage('assets/snoopyinfo.png');
+  images[24] = loadImage('assets/vase1.png');
+  images[25] = loadImage('assets/vase2.png');
+  images[26] = loadImage('assets/vase1info.png');
+  images[27] = loadImage('assets/vase2info.png');
+  images[28] = loadImage('assets/Yellowduck.png');
+  images[29] = loadImage('assets/yellowduckinfo.png');
+  images[30] = loadImage('assets/Pasta.png');
+  images[31] = loadImage('assets/pastainfo.png');
+  images[32] = loadImage('assets/Pic1.png');
+  images[33] = loadImage('assets/Pic2.png');
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textAlign(CENTER);
   textSize(24);
+  fill('yellow');
 
   midX = width/2;
   midY = height/2;
@@ -69,7 +70,6 @@ function setup() {
 
 function draw() {
   drawFunction();
-  drawDebugInfo();
 }
 
 drawBathroom = function() {
@@ -188,6 +188,7 @@ function loadArray() {
   strings[4] = "press M back to MainHall";
   strings[5] = "";
   strings[6] = "Hope you enjoy it !!!";
+  strings[7] = "(Try to click the items you saw in each room (๑•̀ㅂ•́)و✧)";
 
   for(let i = 0 ; i < strings.length; i++) {
     text( strings[i], midX, midY + (i * lineHeight) )
